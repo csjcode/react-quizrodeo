@@ -14,9 +14,29 @@ border: 1px solid red;
 padding: 4em 0;
 width: 100%;
 background: white;
-`;
+`; 
 
 class App extends Component {
+
+  renderList = () => {
+    var myArrData = Array.from({length: 20}, (v, i) => i+1);
+
+    return myArrData.map((v,i)=> {
+      var textFrontTitle = 'textFrontTitle '  + v;
+      var textFrontContent = 'lorem  '  + v;
+      var textBackTitle = 'lorem  '  + v;
+      var textBackContent = 'textBackContent '  + v;
+      return (
+      <FlipCard 
+        textFrontTitle={textFrontTitle} 
+        textBackTitle={textBackTitle} 
+        textFrontContent={textFrontContent} 
+        textBackContent={textBackContent} 
+      />
+     )
+    })
+  }
+
   render() {
     return (
       <div className="App">
@@ -25,14 +45,11 @@ class App extends Component {
           <h1 className="App-title">React Quiz Rodeo</h1>
         </header>
         <p className="App-intro">
-          This is a test.
+          This is a Quiz Rodeo test.
         </p>
         <Wrap>
-          <FlipCard textFront='myFront 1' textBack='myBack 1' />
-          <FlipCard textFront='myFront 2' textBack='myBack 2' />
-          <FlipCard textFront='myFront 3' textBack='myBack 3' />
-          <FlipCard textFront='myFront 4' textBack='myBack 4' />
-          <FlipCard textFront='myFront 5' textBack='myBack 5' />
+
+          {this.renderList()}
         </Wrap>
       </div>
     );
