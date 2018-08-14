@@ -1,0 +1,782 @@
+[
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "COMPUTE"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Virtual Servers in the Cloud",
+	  "A": "Amazon EC2"
+	},
+	{
+	  "Q": "Scale Compute Capacity to Meet Demand",
+	  "A": "Amazon EC2 Auto Scaling"
+	},
+	{
+	  "Q": "Run and Manage Docker Containers",
+	  "A": "Amazon Elastic Container Service"
+	},
+	{
+	  "Q": "Run Managed Kubernetes on AWS",
+	  "A": "Amazon Elastic Container Service for Kubernetes"
+	},
+	{
+	  "Q": "Store and Retrieve Docker Images",
+	  "A": "Amazon Elastic Container Registry"
+	},
+	{
+	  "Q": "Launch and Manage Virtual Private Servers",
+	  "A": "Amazon Lightsail"
+	},
+	{
+	  "Q": "Run Batch Jobs at Any Scale",
+	  "A": "AWS Batch"
+	},
+	{
+	  "Q": "Run and Manage Web Apps",
+	  "A": "AWS Elastic Beanstalk"
+	},
+	{
+	  "Q": "Run Containers without Managing Servers or Clusters",
+	  "A": "AWS Fargate"
+	},
+	{
+	  "Q": "Run your Code in Response to Events",
+	  "A": "AWS Lambda"
+	},
+	{
+	  "Q": "Discover, Deploy, and Publish Serverless Applications",
+	  "A": "AWS Serverless Application Repository"
+	},
+	{
+	  "Q": "Build a Hybrid Cloud without Custom Hardware",
+	  "A": "VMware Cloud on AWS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "STORAGE"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Scalable Storage in the Cloud",
+	  "A": "Amazon S3"
+	},
+	{
+	  "Q": "Block Storage for EC2",
+	  "A": "Amazon EBS"
+	},
+	{
+	  "Q": "Managed File Storage for EC2",
+	  "A": "Amazon Elastic File System (EFS)"
+	},
+	{
+	  "Q": "Low-cost Archive Storage in the Cloud",
+	  "A": "Amazon Glacier"
+	},
+	{
+	  "Q": "Hybrid Storage Integration",
+	  "A": "AWS Storage Gateway"
+	},
+	{
+	  "Q": "Petabyte-scale Data Transport",
+	  "A": "AWS Snowball"
+	},
+	{
+	  "Q": "Petabyte-scale Data Transport with On-board Compute",
+	  "A": "AWS Snowball Edge"
+	},
+	{
+	  "Q": "Exabyte-scale Data Transport",
+	  "A": "AWS Snowmobile"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "DATABASE"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "High Performance Managed Relational Database",
+	  "A": "Amazon Aurora"
+	},
+	{
+	  "Q": "Managed Relational Database Service for MySQL, PostgreSQL, Oracle, SQL Server, and MariaDB",
+	  "A": "Amazon RDS"
+	},
+	{
+	  "Q": "Managed NoSQL Database",
+	  "A": "Amazon DynamoDB"
+	},
+	{
+	  "Q": "In-memory Data Store and Cache",
+	  "A": "Amazon ElastiCache"
+	},
+	{
+	  "Q": "Fast, Simple, Cost-effective Data Warehousing",
+	  "A": "Amazon Redshift"
+	},
+	{
+	  "Q": "Fully Managed Graph Database Service",
+	  "A": "Amazon Neptune"
+	},
+	{
+	  "Q": "Migrate Databases with Minimal Downtime",
+	  "A": "AWS Database Migration Service"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "MIGRATION"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Discover On-Premises Applications to Streamline Migration",
+	  "A": "AWS Application Discovery Service"
+	},
+	{
+	  "Q": "Migrate Databases with Minimal Downtime",
+	  "A": "AWS Database Migration Service"
+	},
+	{
+	  "Q": "Track Migrations from a Single Place",
+	  "A": "AWS Migration Hub"
+	},
+	{
+	  "Q": "Migrate On-Premises Servers to AWS",
+	  "A": "AWS Server Migration Service"
+	},
+	{
+	  "Q": "Petabyte-scale Data Transport",
+	  "A": "AWS Snowball"
+	},
+	{
+	  "Q": "Petabyte-scale Data Transport with On-board Compute",
+	  "A": "AWS Snowball Edge"
+	},
+	{
+	  "Q": "Exabyte-scale Data Transport",
+	  "A": "AWS Snowmobile"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "NETWORKING"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Isolated Cloud Resources",
+	  "A": "Amazon VPC"
+	},
+	{
+	  "Q": "Securely access services hosted on AWS",
+	  "A": "Amazon VPC PrivateLink"
+	},
+	{
+	  "Q": "Global Content Delivery Network",
+	  "A": "Amazon CloudFront"
+	},
+	{
+	  "Q": "Scalable Domain Name System",
+	  "A": "Amazon Route 53"
+	},
+	{
+	  "Q": "Build, Deploy, and Manage APIs",
+	  "A": "Amazon API Gateway"
+	},
+	{
+	  "Q": "Dedicated Network Connection to AWS",
+	  "A": "AWS Direct Connect"
+	},
+	{
+	  "Q": "High Scale Load Balancing",
+	  "A": "Elastic Load Balancing"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "MANAGEMENT TOOLS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Monitor Resources and Applications",
+	  "A": "Amazon CloudWatch"
+	},
+	{
+	  "Q": "Scale Multiple Resources to Meet Demand",
+	  "A": "AWS Auto Scaling"
+	},
+	{
+	  "Q": "Create and Manage Resources with Templates",
+	  "A": "AWS CloudFormation"
+	},
+	{
+	  "Q": "Track User Activity and API Usage",
+	  "A": "AWS CloudTrail"
+	},
+	{
+	  "Q": "Track Resource Inventory and Changes",
+	  "A": "AWS Config"
+	},
+	{
+	  "Q": "Automate Operations with Chef and Puppet",
+	  "A": "AWS OpsWorks"
+	},
+	{
+	  "Q": "Create and Use Standardized Products",
+	  "A": "AWS Service Catalog"
+	},
+	{
+	  "Q": "Gain Operational Insights and Take Action",
+	  "A": "AWS Systems Manager"
+	},
+	{
+	  "Q": "Optimize Performance and Security",
+	  "A": "AWS Trusted Advisor"
+	},
+	{
+	  "Q": "Personalized View of AWS Service Health",
+	  "A": "AWS Personal Health Dashboard"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "DEVELOPER TOOLS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Develop and Deploy AWS Applications",
+	  "A": "AWS CodeStar"
+	},
+	{
+	  "Q": "Store Code in Private Git Repositories",
+	  "A": "AWS CodeCommit"
+	},
+	{
+	  "Q": "Build and Test Code",
+	  "A": "AWS CodeBuild"
+	},
+	{
+	  "Q": "Automate Code Deployment",
+	  "A": "AWS CodeDeploy"
+	},
+	{
+	  "Q": "Release Software using Continuous Delivery",
+	  "A": "AWS CodePipeline"
+	},
+	{
+	  "Q": "Write, Run, and Debug Code on a Cloud IDE",
+	  "A": "AWS Cloud9"
+	},
+	{
+	  "Q": "Analyze and Debug Your Applications",
+	  "A": "AWS X-Ray"
+	},
+	{
+	  "Q": "Unified Tool to Manage AWS Services",
+	  "A": "AWS Command Line Interface"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "MEDIA SERVICES"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Easy-to-use Scalable Media Transcoding",
+	  "A": "Amazon Elastic Transcoder"
+	},
+	{
+	  "Q": "Process and Analyze Video Stream",
+	  "A": "Amazon Kinesis Video Streams"
+	},
+	{
+	  "Q": "Convert File-based Video Content",
+	  "A": "AWS Elemental MediaConvert"
+	},
+	{
+	  "Q": "Convert Live Video Content",
+	  "A": "AWS Elemental MediaLive"
+	},
+	{
+	  "Q": "Video Origination and Packaging",
+	  "A": "AWS Elemental MediaPackage"
+	},
+	{
+	  "Q": "Media Storage and Simple HTTP Origin",
+	  "A": "AWS Elemental MediaStore"
+	},
+	{
+	  "Q": "Video Personalization and Monetization",
+	  "A": "AWS Elemental MediaTailor"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "SECURITY, IDENTITY AND COMPLIANCE"
+	},
+	{
+	  "Q": "Manage User Access and Encryption Keys",
+	  "A": "AWS Identity & Access Management"
+	},
+	{
+	  "Q": "Create Flexible Cloud-native Directories",
+	  "A": "Amazon Cloud Directory"
+	},
+	{
+	  "Q": "Identity Management for your Apps",
+	  "A": "Amazon Cognito"
+	},
+	{
+	  "Q": "Cloud Single Sign-On (SSO) Service",
+	  "A": "AWS Single Sign-On"
+	},
+	{
+	  "Q": "Managed Threat Detection Service",
+	  "A": "Amazon GuardDuty"
+	},
+	{
+	  "Q": "Analyze Application Security",
+	  "A": "Amazon Inspector"
+	},
+	{
+	  "Q": "Discover, Classify, and Protect Your Data",
+	  "A": "Amazon Macie"
+	},
+	{
+	  "Q": "Provision, Manage, and Deploy SSL/TLS Certificates",
+	  "A": "AWS Certificate Manager"
+	},
+	{
+	  "Q": "Hardware-based Key Storage for Regulatory Compliance",
+	  "A": "AWS CloudHSM"
+	},
+	{
+	  "Q": "Host and Manage Active Directory",
+	  "A": "AWS Directory Service"
+	},
+	{
+	  "Q": "Central Management of Firewall Rules",
+	  "A": "AWS Firewall Manager"
+	},
+	{
+	  "Q": "Managed Creation and Control of Encryption Keys",
+	  "A": "AWS Key Management Service"
+	},
+	{
+	  "Q": "Policy-based Management for Multiple AWS Accounts",
+	  "A": "AWS Organizations"
+	},
+	{
+	  "Q": "Rotate, Manage, and Retrieve Secrets",
+	  "A": "AWS Secrets Manager"
+	},
+	{
+	  "Q": "DDoS Protection",
+	  "A": "AWS Shield"
+	},
+	{
+	  "Q": "Filter Malicious Web Traffic",
+	  "A": "AWS WAF"
+	},
+	{
+	  "Q": "On-demand access to AWS compliance reports",
+	  "A": "AWS Artifact"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "ANALYTICS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Query Data in S3 using SQL",
+	  "A": "Amazon Athena"
+	},
+	{
+	  "Q": "Hosted Hadoop Framework",
+	  "A": "Amazon EMR"
+	},
+	{
+	  "Q": "Managed Search Service",
+	  "A": "Amazon CloudSearch"
+	},
+	{
+	  "Q": "Run and Scale Elasticsearch Clusters",
+	  "A": "Amazon Elasticsearch Service"
+	},
+	{
+	  "Q": "Work with Real-time Streaming Data",
+	  "A": "Amazon Kinesis"
+	},
+	{
+	  "Q": "Fast, Simple, Cost-effective Data Warehousing",
+	  "A": "Amazon Redshift"
+	},
+	{
+	  "Q": "Fast Business Analytics Service",
+	  "A": "Amazon Quicksight"
+	},
+	{
+	  "Q": "Orchestration Service for Periodic, Data-driven Workflows",
+	  "A": "AWS Data Pipeline"
+	},
+	{
+	  "Q": "Prepare and Load Data",
+	  "A": "AWS Glue"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "MACHINE LEARNING"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Build, Train, and Deploy Machine Learning Models at Scale",
+	  "A": "Amazon SageMaker"
+	},
+	{
+	  "Q": "Discover Insights and Relationships in Text",
+	  "A": "Amazon Comprehend"
+	},
+	{
+	  "Q": "Build Voice and Text Chatbots",
+	  "A": "Amazon Lex"
+	},
+	{
+	  "Q": "Turn Text into Lifelike Speech",
+	  "A": "Amazon Polly"
+	},
+	{
+	  "Q": "Analyze Image and Video",
+	  "A": "Amazon Rekognition"
+	},
+	{
+	  "Q": "Machine Learning for Developers",
+	  "A": "Amazon Machine Learning"
+	},
+	{
+	  "Q": "Natural and Fluent Language Translation",
+	  "A": "Amazon Translate"
+	},
+	{
+	  "Q": "Automatic Speech Recognition",
+	  "A": "Amazon Transcribe"
+	},
+	{
+	  "Q": "Deep Learning Enabled Video Camera",
+	  "A": "AWS DeepLens"
+	},
+	{
+	  "Q": "Quickly Start Deep Learning on EC2",
+	  "A": "AWS Deep Learning AMIs"
+	},
+	{
+	  "Q": "Scalable, High-performance Deep Learning",
+	  "A": "Apache MXNet on AWS"
+	},
+	{
+	  "Q": "Open-source Machine Intelligence Library",
+	  "A": "TensorFlow on AWS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "MOBILE + AR/VR"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Build, Test, and Monitor Apps",
+	  "A": "AWS Mobile Hub"
+	},
+	{
+	  "Q": "Build, Deploy, and Manage APIs",
+	  "A": "Amazon API Gateway"
+	},
+	{
+	  "Q": "Push Notifications for Mobile Apps",
+	  "A": "Amazon Pinpoint"
+	},
+	{
+	  "Q": "Real-time and Offline Mobile Data Apps",
+	  "A": "AWS AppSync"
+	},
+	{
+	  "Q": "Test Android, FireOS, and iOS Apps on Real Devices in the Cloud",
+	  "A": "AWS Device Farm"
+	},
+	{
+	  "Q": "Mobile Software Development Kit",
+	  "A": "AWS Mobile SDK"
+	},
+	{
+	  "Q": "Build and Run VR and AR Applications",
+	  "A": "Amazon Sumerian\n"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "APPLICATION INTEGRATION"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Coordinate Distributed Applications",
+	  "A": "AWS Step Functions"
+	},
+	{
+	  "Q": "Managed Message Queues",
+	  "A": "Amazon Simple Queue Service (SQS)"
+	},
+	{
+	  "Q": "Pub/Sub, Mobile Push and SMS",
+	  "A": "Amazon Simple Notification Service (SNS)"
+	},
+	{
+	  "Q": "Managed Message Broker for ActiveMQ",
+	  "A": "Amazon MQ"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "CUSTOMER ENGAGEMENT"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Cloud-based Contact Center",
+	  "A": "Amazon Connect"
+	},
+	{
+	  "Q": "Push Notifications for Mobile Apps",
+	  "A": "Amazon Pinpoint"
+	},
+	{
+	  "Q": "Email Sending and Receiving",
+	  "A": "Amazon Simple Email Service (SES)"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "BUSINESS"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Empower your Organization with Alexa",
+	  "A": "Alexa for Business"
+	},
+	{
+	  "Q": "Frustration-free Meetings, Video Calls, and Chat",
+	  "A": "Amazon Chime"
+	},
+	{
+	  "Q": "Enterprise Storage and Sharing Service",
+	  "A": "Amazon WorkDocs"
+	},
+	{
+	  "Q": "Secure and Managed Business Email and Calendaring",
+	  "A": "Amazon WorkMail"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "DESKTOP"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Desktop Computing Service",
+	  "A": "Amazon WorkSpaces"
+	},
+	{
+	  "Q": "Stream Desktop Applications Securely to a Browser\n",
+	  "A": "Amazon AppStream 2.0"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "",
+	  "A": "IOT"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Connect Devices to the Cloud",
+	  "A": "AWS IoT Core"
+	},
+	{
+	  "Q": "IoT Operating System for Microcontrollers",
+	  "A": "Amazon FreeRTOS"
+	},
+	{
+	  "Q": "Local Compute, Messaging, and Sync for Devices",
+	  "A": "AWS Greengrass"
+	},
+	{
+	  "Q": "One Click Creation of an AWS Lambda Trigger",
+	  "A": "AWS IoT 1-Click"
+	},
+	{
+	  "Q": "Analytics for IoT Devices",
+	  "A": "AWS IoT Analytics"
+	},
+	{
+	  "Q": "Cloud Programmable Dash Button",
+	  "A": "AWS IoT Button"
+	},
+	{
+	  "Q": "Security Management for IoT devices",
+	  "A": "AWS IoT Device Defender"
+	},
+	{
+	  "Q": "Onboard, Organize, and Remotely Manage IoT Devices",
+	  "A": "AWS IoT Device Management"
+	},
+	{
+	  "Q": "",
+	  "A": ""
+	},
+	{
+	  "Q": "Simple, Fast, Cost-effective Dedicated Game Server Hosting",
+	  "A": "Amazon GameLift"
+	},
+	{
+	  "Q": "A Free Cross-Platform 3D Game Engine with Full Source, Integrated with AWS and Twitch",
+	  "A": "Amazon Lumberyard"
+	}
+  ]

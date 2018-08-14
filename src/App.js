@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import FlipCard from './FlipCard'
 import styled from 'styled-components';
 import logo from './logo.svg';
+import myData from './myData.json';
 import './App.css';
 
 const Wrap = styled.section`
@@ -19,13 +20,22 @@ background: white;
 class App extends Component {
 
   renderList = () => {
-    var myArrData = Array.from({length: 20}, (v, i) => i+1);
+    // var myArrData = Array.from({length: 20}, (v, i) => i+1);
 
-    return myArrData.map((v,i)=> {
-      var textFrontTitle = 'textFrontTitle '  + v;
-      var textFrontContent = 'lorem  '  + v;
-      var textBackTitle = 'lorem  '  + v;
-      var textBackContent = 'textBackContent '  + v;
+    var textFrontTitle, textFrontContent, textBackTitle,textBackContent;
+
+    return myData.map((v,i)=> {
+
+      // (myData[i]["A"] !== '') ? textFrontTitle = myData[i]["Q"] : textFrontTitle = 'textFrontTitle '  + i;
+      textFrontTitle = '';
+      (myData[i]["A"] !== '') ? textFrontContent = myData[i]["Q"] : textFrontContent = 'textFrontContent '  + i;
+
+  
+      var textBackTitle = '';
+      (myData[i]["A"] !== '') ? textBackContent = myData[i]["A"] : textBackContent = 'textBackContent '  + i;
+
+      if ((!myData[i]["A"])||(!myData[i]["Q"])) { return null } // catch and remove non-quiz rows
+
       return (
       <FlipCard 
         textFrontTitle={textFrontTitle} 
