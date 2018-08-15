@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import FlipCard from './FlipCard'
+import Loading from './Loading'
 import Papa from 'papaparse'
 import styled from 'styled-components';
-import logo from './logo.svg';
 // import myData from './myData.json';
 // import myDataCSV from './AWS-LIST.csv';
 import myDataCSV from './AWS-ARCH.csv';
@@ -13,7 +13,7 @@ const Wrap = styled.section`
 	align-items: center;
 	flex-wrap: wrap;
 	justify-content: center;
-	border: 1px solid red;
+	// border: 1px solid red;
 	// margin: 0 auto;
 	padding: 4em 0;
 	width: 100%;
@@ -24,8 +24,10 @@ class CardList extends Component {
 	constructor(props){
 		super(props);
 		this.state = {
-			data:[]
+			data:[],
+			cardsFlipped:[]
 		}
+		
 	}
 
   componentDidMount() {
@@ -37,26 +39,43 @@ class CardList extends Component {
     });
   }
 
+   handleAlert = (cardId) => {
+		if(this.state.cardsFlipped.indexOf(cardId)<0){
+			this.setState(prevState => ({
+				cardsFlipped: [...prevState.cardsFlipped, cardId]
+			}))
+		} else {
+			let arrCardsFlipped = this.state.cardsFlipped;
+			arrCardsFlipped.splice(arrCardsFlipped.indexOf(cardId),1);
+			this.setState(prevState => ({
+				cardsFlipped: arrCardsFlipped
+			}))			
+		}
+		// alert(cardId);
+	}
+
 	updateData = (result) => {
 		const data = result.data;
-		console.log(data)
+		console.log('updated data')
 		this.setState({data});
 	}
 
 	renderList = () => {
 		
 		if(this.state.data.length<2){
-			return null
+			return <Loading msg="Loading data..."/>
 		} else {
 			var myDataJSON = this.state.data;
 		}
 	 
-		var textFrontTitle, textFrontContent, textBackTitle,textBackContent;
+		var textFrontTitle, textFrontContent, textBackTitle, textBackContent, countCard;
   
 		return myDataJSON.map((v,i)=> {
   
 		  // (myData[i]["A"] !== '') ? textFrontTitle = myData[i]["Q"] : textFrontTitle = 'textFrontTitle '  + i;
 		  textFrontTitle = '';
+		  countCard = i+1;
+
 		  (myDataJSON[i]["A"] !== '') ? textFrontContent = myDataJSON[i]["Q"] : textFrontContent = 'textFrontContent '  + i;
   
 	 
@@ -66,17 +85,20 @@ class CardList extends Component {
 		  if ((!myDataJSON[i]["A"])||(!myDataJSON[i]["Q"])) { return null } // catch and remove non-quiz rows
   
 		  return (
-		  <FlipCard 
-			 textFrontTitle={textFrontTitle} 
-			 textBackTitle={textBackTitle} 
-			 textFrontContent={textFrontContent} 
-			 textBackContent={textBackContent} 
+		  		<FlipCard 
+				  	handleAlert={this.handleAlert}
+					cardId={countCard} 
+					textFrontTitle={textFrontTitle} 
+					textBackTitle={textBackTitle} 
+					textFrontContent={textFrontContent} 
+					textBackContent={textBackContent} 
 		  />
 		 )
 		})
 	 }
 
 	render() {
+		console.log(this.state.cardsFlipped);
 		return (
 			<Wrap>
 				{this.renderList()}

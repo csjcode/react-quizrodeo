@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
-import FlipCard from './FlipCard'
 import CardList from './CardList'
-import Papa from 'papaparse'
-import styled from 'styled-components';
 import logo from './logo.svg';
-// import myData from './myData.json';
-// import myDataCSV from './AWS-LIST.csv';
 import './App.css';
 
 
