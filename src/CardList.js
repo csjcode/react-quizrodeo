@@ -3,9 +3,11 @@ import FlipCard from './FlipCard'
 import Loading from './Loading'
 import Papa from 'papaparse'
 import styled from 'styled-components';
+import arrayShuffle from './helpers/arrayShuffle'
 // import myData from './myData.json';
 // import myDataCSV from './AWS-LIST.csv';
-import myDataCSV from './AWS-ARCH.csv';
+import myDataCSV from './AWS-GL.csv';
+// import myDataCSV from './AWS-ARCH.csv';
 import './App.css';
 
 const Wrap = styled.section`
@@ -56,7 +58,9 @@ class CardList extends Component {
 
 	updateData = (result) => {
 		const data = result.data;
-		console.log('updated data')
+		console.log('updated data');
+		// var dataShuffle = arrayShuffle(data);
+
 		this.setState({data});
 	}
 
