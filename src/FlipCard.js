@@ -4,7 +4,13 @@ import styled from 'styled-components';
 
 class FlipCard extends Component {
 
-
+  replaceLineBreak = (str) => {
+    var myHtml = str.replace(/- /g,'<br />-');
+    // myHtml = str.replace('-','<br />-');
+    // var myHtml = str;
+    console.log(myHtml); 
+    return {__html: myHtml};
+  }
 
   render() {
 
@@ -12,6 +18,8 @@ class FlipCard extends Component {
     
     if(this.props.textFrontContent.length > 500){ cardFontSize = '16px'; }
     if(this.props.textFrontContent.length > 1000){ cardFontSize = '12px'; }
+
+    // var textFrontContent = this.props.textFrontContent.replace('- ','\n');
     
 	 return (
 		<div style={{padding: 10}} onClick={() => this.props.handleAlert(this.props.cardId)}>
@@ -30,16 +38,16 @@ class FlipCard extends Component {
               }}
             >  
               <div style={{padding:'20px 0px', border:'1px solid silver'}}><span>{this.props.cardId}</span></div>
-              <div style={{padding:'20px 0'}}><span>{this.props.textFrontTitle ? this.props.textFrontTitle : ``}</span></div>
-              <div style={{padding:'20px 0'}}><span>{this.props.textFrontContent ? this.props.textFrontContent : ``}</span></div>
+              {/* <div style={{padding:'20px 0'}}><span>{this.props.textFrontTitle ? this.props.textFrontTitle : ``}</span></div> */}
+              <div style={{padding:'20px 0'}}><span dangerouslySetInnerHTML={this.replaceLineBreak(this.props.textFrontContent)}></span></div>
             </FrontSide>
 
             <BackSide
               style={{ backgroundColor: '#e7e7e7'}}
               >
               <div style={{padding:'20px 0px', border:'1px solid silver'}}><span>{this.props.cardId}</span></div>
-              <div style={{padding:'20px 0'}}><span>{this.props.textBackTitle ? this.props.textBackTitle : ``}</span></div>
-              <div style={{padding:'20px 0'}}><span>{this.props.textBackContent ? this.props.textBackContent : ``}</span></div>
+              <div style={{padding:'20px 0'}}><span >{this.props.textBackTitle ? this.props.textBackTitle : ``}</span></div>
+              <div style={{padding:'20px 0'}}><span dangerouslySetInnerHTML={this.replaceLineBreak(this.props.textBackContent)}></span></div>
             </BackSide>
 
           </Flippy>

@@ -5,8 +5,16 @@ import Papa from 'papaparse'
 import styled from 'styled-components';
 import arrayShuffle from './helpers/arrayShuffle'
 // import myData from './myData.json';
+// import myDataCSV from './AWS-APPS.csv';
+// import myDataCSV from './AWS-ARCH.csv';
+// import myDataCSV from './AWS-DB.csv';
+import myDataCSV from './AWS-EC2.csv';
+// import myDataCSV from './AWS-GL.csv';
+// import myDataCSV from './AWS-IAM.csv';
 // import myDataCSV from './AWS-LIST.csv';
-import myDataCSV from './AWS-GL.csv';
+// import myDataCSV from './AWS-S3.csv';
+// import myDataCSV from './AWS-VPC.csv';
+// import myDataCSV from './AWS-GL.csv';
 // import myDataCSV from './AWS-ARCH.csv';
 import './App.css';
 
