@@ -18,11 +18,18 @@ class FlipCard extends Component {
     
     if(this.props.textFrontContent.length > 500){ cardFontSize = '16px'; }
     if(this.props.textFrontContent.length > 1000){ cardFontSize = '12px'; }
+    if(this.props.columns === 1){ 
+      var cardRowWidth = '100%';
+      var cardRowMargin = '0 50%';
+    } else { 
+      var cardRowWidth = '600px'
+      var cardRowMargin = '';
+    }
 
     // var textFrontContent = this.props.textFrontContent.replace('- ','\n');
     
 	 return (
-		<div style={{padding: 10}} onClick={() => this.props.handleAlert(this.props.cardId)}>
+		<div style={{padding: 10, width:cardRowWidth, margin:cardRowMargin}} onClick={() => this.props.handleAlert(this.props.cardId)}>
           <Flippy
             flipOnHover={false} // default false
             flipOnClick={true} // default false
@@ -30,7 +37,7 @@ class FlipCard extends Component {
             ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
             // if you pass isFlipped prop component will be controlled component.
             // and other props, which will go to div
-            style={{ width: '600px', height: '400px', fontSize:cardFontSize }} /// these are optional style, it is not necessary
+            style={{ width: '600px', height: '400px', fontSize:cardFontSize, flex:'1' }} /// these are optional style, it is not necessary
           >
             <FrontSide
               style={{

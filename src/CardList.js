@@ -8,19 +8,21 @@ import arrayShuffle from './helpers/arrayShuffle'
 // import myDataCSV from './AWS-APPS.csv';
 // import myDataCSV from './AWS-ARCH.csv';
 // import myDataCSV from './AWS-DB.csv';
-import myDataCSV from './AWS-EC2.csv';
+// import myDataCSV from './AWS-EC2.csv';
 // import myDataCSV from './AWS-GL.csv';
 // import myDataCSV from './AWS-IAM.csv';
-// import myDataCSV from './AWS-LIST.csv';
+import myDataCSV from './AWS-LIST.csv';
 // import myDataCSV from './AWS-S3.csv';
 // import myDataCSV from './AWS-VPC.csv';
 // import myDataCSV from './AWS-GL.csv';
 // import myDataCSV from './AWS-ARCH.csv';
+// import myDataCSV from './AWS-PTEST1.csv';
 import './App.css';
 
 const Wrap = styled.section`
 	display: flex;
 	align-items: center;
+	flex:1;
 	flex-wrap: wrap;
 	justify-content: center;
 	// border: 1px solid red;
@@ -97,7 +99,8 @@ class CardList extends Component {
 		  if ((!myDataJSON[i]["A"])||(!myDataJSON[i]["Q"])) { return null } // catch and remove non-quiz rows
   
 		  return (
-		  		<FlipCard 
+				  <FlipCard 
+				  	columns = {this.props.columns}
 				  	handleAlert={this.handleAlert}
 					cardId={countCard} 
 					textFrontTitle={textFrontTitle} 

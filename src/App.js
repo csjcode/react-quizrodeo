@@ -6,6 +6,19 @@ import './App.css';
 
 class App extends Component {
 
+  constructor(props) {
+    super(props)
+    this.state = {
+      columns:3
+    }
+  }
+  
+  changeColumns = (e) => {
+    this.setState(prevState => ({columns:e}));
+    // alert(e);
+    // alert(this.state.columns);
+  }
+
   render() {
     return (
       <div className="App">
@@ -16,7 +29,19 @@ class App extends Component {
         <p className="App-intro">
           This is a Quiz Rodeo test.
         </p>        
-          <CardList />
+        <div>
+          <button 
+            style={{padding:10, marginRight:10}} 
+            onClick={()=>this.changeColumns(1)}>
+             1 Column
+          </button> 
+          <button 
+            style={{padding:10, marginRight:10}} 
+            onClick={()=>this.changeColumns(3)}>
+              3 Column
+            </button>
+				</div>
+        <CardList columns={this.state.columns} />
       </div>
     );
   }
